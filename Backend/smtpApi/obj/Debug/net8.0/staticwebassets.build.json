@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cRcr8F3SZrDPTFM9h0m+oXxRw2ZSKNsZbVWlXpegrME=",
+  "Source": "smtpApi",
+  "BasePath": "_content/smtpApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,128 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(235, 235, 235);
+}
+.nmLogo{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.testSmtpLogo{
+    padding-left: 2rem ;
+    margin-bottom: 1rem;
+}
+.description{
+    padding-left: 2rem;
+    h1{
+        font-size: 22px;
+        font-weight: 500;
+        color: rgb(37, 37, 37);
+    }
+    p{
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(68, 68, 68);
+        width: 80vw;
+        margin-bottom: 1rem;
+    }
+}
+form{
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+}
+.smtpConfig{
+    width: 30vw;
+    background: white;
+    margin-right: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    height: fit-content;
+    h1{
+        margin-bottom: 10px;
+    }
+    .field{
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid rgb(193, 193, 193);
+        padding: 5px 0 5px 0;
+        label{
+            width: 7rem;
+        }
+        input{
+            width: 50%;
+        }
+    }
+    .checkBox{
+        display: flex;
+        width: 100%;
+        label {
+            width: 7rem;
+        }
+    }
+    input{
+        border: none;
+    }
+    input:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+    input:hover {
+        border-bottom: 2px solid rgb(235, 235, 235);
+    }
+}
+.mailSetup{
+    background: #ffffff;
+    width: 50vw;
+    border-radius: 8px;
+    position: relative;
+    .mailHeader{
+        border-bottom: 2px solid rgb(235, 235, 235);
+        background: #03EED2;
+        padding: 5px 10px 0px 10px;
+        border-radius: 8px 8px 0 0;
+    }
+    .mailBody{
+        padding: 5px 10px;
+        .field{
+            display: flex;
+            border-bottom: 1px solid rgb(193, 193, 193);
+            padding: 5px 0 5px 0;
+        }
+        label{
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        input{
+            width: 100%;
+            border: none;
+        }
+        input:focus,
+        textarea:focus,
+        button:focus {
+            outline: none;
+        }
+        textarea{
+            width: 100%;
+            resize: none;
+            height: 26vh;
+            border: none;
+        }
+        .sendBtn{
+            position: absolute;
+            bottom: 10px;
+            button{
+                padding: 5px 10px;
+                border: none;
+                background-color: #03EED2;
+                border-radius: 3rem;
+            }
+        }
+    }
+}

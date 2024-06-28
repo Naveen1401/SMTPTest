@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test SMTP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nmLogo">
+        <svg width="82" height="41" viewBox="0 0 82 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M41 30.75V41L0 10.25V0L41 30.75Z" fill="black" />
+            <path d="M82 0V10.25L61.5 25.625L41 10.25V0L61.5 15.375L82 0Z" fill="black" />
+            <path
+                d="M5.125 41C7.95546 41 10.25 38.7055 10.25 35.875C10.25 33.0445 7.95546 30.75 5.125 30.75C2.29454 30.75 0 33.0445 0 35.875C0 38.7055 2.29454 41 5.125 41Z"
+                fill="black" />
+            <path d="M82 30.4571V41H67.9429L82 30.4571Z" fill="black" />
+        </svg>
+
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: #231f20;
+                    }
+                </style>
+            </defs>
+            <polygon class="cls-1" points="72 54 72 72 0 18 0 0 72 54" />
+            <polygon class="cls-1" points="144 0 144 18 108 45 72 18 72 0 108 27 144 0" />
+            <circle class="cls-1" cx="9" cy="63" r="9" />
+            <polygon class="cls-1" points="144 61.76 144 72 130.35 72 144 61.76" />
+        </svg>
+    </div>
+    <div class="testSmtpLogo">
+        <svg width="126" height="46" viewBox="0 0 126 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M36 25L4.82309 6.25L67.1769 6.25L36 25Z" fill="#03EED2" />
+            <rect x="5" y="7" width="62" height="36" stroke="black" stroke-width="2" />
+            <path d="M5 43L36 25M67 7L36 25M5 7L36 25" stroke="black" stroke-width="2" />
+            <path
+                d="M78.624 9.8H86.976V11.608H82.72L83.776 12.552V21H81.84V13L81.376 11.608H78.624V9.8ZM89.8498 9.8H96.0898V11.608H90.5858L90.2978 11.928V14.44H93.9938V16.248H90.2978V18.488L90.7618 19.192H96.0898V21H89.8018L88.3618 18.856V11.32L89.8498 9.8ZM99.6355 9.8H104.484L105.588 11.464L104.276 12.744L103.508 11.608H100.388L100.1 11.912V13.784L100.58 14.488H104.628L105.908 16.424V19.64L104.596 21H99.0115L98.0675 19.656L99.3315 18.344L99.9555 19.192H103.796L103.972 19.048V16.744L103.652 16.296H99.6035L98.1635 14.152V11.336L99.6355 9.8ZM107.405 9.8H115.757V11.608H111.501L112.557 12.552V21H110.621V13L110.157 11.608H107.405V9.8ZM80.448 29.8H85.296L86.4 31.464L85.088 32.744L84.32 31.608H81.2L80.912 31.912V33.784L81.392 34.488H85.44L86.72 36.424V39.64L85.408 41H79.824L78.88 39.656L80.144 38.344L80.768 39.192H84.608L84.784 39.048V36.744L84.464 36.296H80.416L78.976 34.152V31.336L80.448 29.8ZM88.5378 29.8H90.4738V29.976L92.1538 32.488L94.3298 29.8H96.2658V41H94.3298V32.408L93.0658 33.896V34.904H91.6738V34.648L90.4738 32.856V41H88.5378V29.8ZM97.8115 29.8H106.164V31.608H101.908L102.964 32.552V41H101.028V33L100.564 31.608H97.8115V29.8ZM107.709 29.8H114.029L115.453 31.944V34.776L113.997 36.264H109.645V41H107.709V29.8ZM109.645 31.608V35.016L110.541 34.488H113.213L113.517 34.184V32.312L113.053 31.608H109.645Z"
+                fill="black" />
+        </svg>
+
+    </div>
+    <div class="description">
+        <h1>What is SMTP?</h1>
+        <p>The Simple Mail Transfer Protocol is an Internet standard communication protocol for electronic mail transmission. Mail
+        servers and other message transfer agents use SMTP to send and receive mail messages.</p>
+        <h1>What is TEST SMTP?</h1>
+        <p>TEST SMTP is a service which help you test your SMTP configration and send a mail.</p>
+    </div>
+    <div class="form">
+        <form>
+            <div class="smtpConfig">
+                <h1>SMTP Config</h1>
+                <div class="field">
+                    <label for="smtpServer">Server:</label>
+                    <input type="text" id="smtpServer" name="smtpServer" >
+                </div>
+                <div class="field">
+                    <label for="port">Port:</label>
+                    <input type="number" id="port" name="port">
+                </div>
+                <div class="field">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" >
+                </div>
+                <div class="field">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" >
+                </div>
+                <div class="checkBox">
+                    <label for="useSsl">Use SSL:</label>
+                    <input type="checkbox" id="useSsl" name="useSsl" checked>
+                </div>
+            </div>
+            <div class="mailSetup">
+                <div class="mailHeader">
+                    <p>Mail</p>
+                </div>
+                <div class="mailBody">
+                    <div class="field">
+                        <label for="fromEmail">From:</label>
+                        <input type="email" id="fromEmail" name="fromEmail" >
+                    </div>
+                    <div class="field">
+                        <label for="toEmail">To:</label>
+                        <input type="email" id="toEmail" name="toEmail" >
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="SMTP Test Mail">
+                    </div>
+                    <div class="textArea">
+                        <textarea id="body" name="body" rows="4" placeholder="This is a test mail. Please don't reply to this mail"></textarea>
+                    </div>
+                    <div class="sendBtn">
+                        <button type="submit">Send Email</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
